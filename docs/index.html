@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIFER-Mamba 论文解说页</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__intro">
+          <p class="eyebrow">论文解说页</p>
+          <h1>HIFER-Mamba</h1>
+          <p class="hero__summary">
+            这是一个面向审稿人和读者的论文展示页，包含方法亮点、模型结构、项目文件夹与实验图示说明。
+          </p>
+          <div class="tag-row">
+            <span>Hybrid Feature Enhancement</span>
+            <span>Mamba Backbone</span>
+            <span>Reviewer Friendly</span>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <h2>核心说明</h2>
+          <ul>
+            <li>融合多尺度特征与状态空间建模</li>
+            <li>适合长序列建模与论文汇报</li>
+            <li>便于审稿人快速理解方法逻辑</li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel">
+          <div class="panel__title-row">
+            <h2>项目内容</h2>
+            <span>Overview</span>
+          </div>
+          <div class="folder-list">
+            <div class="folder-card">
+              <strong>data/</strong>
+              <p>实验数据与预处理资源</p>
+            </div>
+            <div class="folder-card">
+              <strong>models/</strong>
+              <p>核心编码器、融合模块和预测头</p>
+            </div>
+            <div class="folder-card">
+              <strong>figures/</strong>
+              <p>论文中的结构图与实验结果图</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__title-row">
+            <h2>模型模块</h2>
+            <span>Modules</span>
+          </div>
+          <div class="model-grid">
+            <article class="model-card">
+              <h3>Mamba Encoder</h3>
+              <p>用于高效提取长序列特征并保持稳定的状态更新。</p>
+            </article>
+            <article class="model-card">
+              <h3>Feature Fusion</h3>
+              <p>将多尺度特征进行对齐融合，提升表示能力。</p>
+            </article>
+            <article class="model-card">
+              <h3>Prediction Head</h3>
+              <p>输出最终任务结果并支持实验验证。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <section class="panel panel--wide">
+        <div class="panel__title-row">
+          <h2>论文图示说明</h2>
+          <span>Figures</span>
+        </div>
+        <div class="figure-grid">
+          <article class="figure-card">
+            <img src="../assets/architecture.svg" alt="模型结构图" />
+            <div>
+              <h3>模型结构图</h3>
+              <p>展示了输入特征经过 Mamba 编码、特征融合与输出预测的整体流程。</p>
+            </div>
+          </article>
+          <article class="figure-card">
+            <img src="../assets/pipeline.svg" alt="训练流程图" />
+            <div>
+              <h3>训练与推理流程</h3>
+              <p>说明了数据准备、模型训练、推理和结果分析的完整链路。</p>
+            </div>
+          </article>
+          <article class="figure-card">
+            <img src="../assets/results.svg" alt="实验结果图" />
+            <div>
+              <h3>实验结果展示</h3>
+              <p>用于直观对比不同配置下的性能提升与稳定性。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

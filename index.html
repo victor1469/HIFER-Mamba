@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIFER-Mamba 论文模型展示</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__intro">
+          <p class="eyebrow">论文模型展示界面</p>
+          <h1>HIFER-Mamba</h1>
+          <p class="hero__summary">
+            这是一个面向论文展示的模型项目界面，整合了项目文件夹结构、核心模型模块以及论文中的关键图示说明。
+          </p>
+          <div class="tag-row">
+            <span>Hybrid Feature Enhancement</span>
+            <span>Mamba Backbone</span>
+            <span>Paper Gallery</span>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <h2>研究亮点</h2>
+          <ul>
+            <li>融合多尺度特征与状态空间建模</li>
+            <li>支持高效长序列建模</li>
+            <li>适用于论文汇报与项目展示</li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel">
+          <div class="panel__title-row">
+            <h2>项目文件夹</h2>
+            <span>Structure</span>
+          </div>
+          <div class="folder-list">
+            <div class="folder-card">
+              <strong>data/</strong>
+              <p>论文实验数据与预处理脚本</p>
+            </div>
+            <div class="folder-card">
+              <strong>models/</strong>
+              <p>主模型、编码器与解码器模块</p>
+            </div>
+            <div class="folder-card">
+              <strong>figures/</strong>
+              <p>论文中的结构图、结果图与示意图</p>
+            </div>
+            <div class="folder-card">
+              <strong>experiments/</strong>
+              <p>训练配置、日志与复现实验</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__title-row">
+            <h2>核心模型</h2>
+            <span>Modules</span>
+          </div>
+          <div class="model-grid">
+            <article class="model-card">
+              <h3>Mamba Encoder</h3>
+              <p>用于长序列特征提取，具备高效状态更新能力。</p>
+            </article>
+            <article class="model-card">
+              <h3>Feature Fusion</h3>
+              <p>将不同尺度特征进行对齐融合，提升表示能力。</p>
+            </article>
+            <article class="model-card">
+              <h3>Hybrid Head</h3>
+              <p>输出分支用于任务预测与结果对齐。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <section class="panel panel--wide">
+        <div class="panel__title-row">
+          <h2>论文图示说明</h2>
+          <span>Figures</span>
+        </div>
+        <div class="figure-grid">
+          <article class="figure-card">
+            <img src="assets/architecture.svg" alt="模型结构图" />
+            <div>
+              <h3>模型结构图</h3>
+              <p>展示了输入特征经过 Mamba 编码、特征融合和任务头输出的整体流程。</p>
+            </div>
+          </article>
+          <article class="figure-card">
+            <img src="assets/pipeline.svg" alt="训练流程图" />
+            <div>
+              <h3>训练与推理流程</h3>
+              <p>呈现了数据预处理、模型训练、结果验证与可视化分析的完整链路。</p>
+            </div>
+          </article>
+          <article class="figure-card">
+            <img src="assets/results.svg" alt="结果对比图" />
+            <div>
+              <h3>实验结果展示</h3>
+              <p>用于说明模型在不同配置下的性能提升与稳定性表现。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
