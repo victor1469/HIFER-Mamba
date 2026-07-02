@@ -31,6 +31,20 @@
         </div>
       </header>
 
+      <section class="panel panel--wide" style="margin-top: 20px;">
+        <div class="panel__title-row">
+          <h2>Paper Overview</h2>
+          <span>Teaser</span>
+        </div>
+        <div class="figure-card">
+          <img src="./figures/overview.png" alt="HIFER-Mamba overview" />
+          <div>
+            <h3>Method overview</h3>
+            <p>HIFER-Mamba enhances the original MambaIR framework through frequency-aware feature enhancement, progressive feature integration, and nonlinear state enhancement.</p>
+          </div>
+        </div>
+      </section>
+
       <main class="content-grid">
         <section class="panel">
           <div class="panel__title-row">
@@ -77,26 +91,61 @@
 
       <section class="panel panel--wide">
         <div class="panel__title-row">
+          <h2>Key Ideas</h2>
+          <span>Contributions</span>
+        </div>
+        <div class="model-grid">
+          <article class="model-card">
+            <h3>Frequency-aware Enhancement</h3>
+            <p>Explicitly enhances high-frequency representations for sharper textures and clearer edges.</p>
+          </article>
+          <article class="model-card">
+            <h3>Progressive Feature Integration</h3>
+            <p>Improves cross-layer information propagation and feature consistency during reconstruction.</p>
+          </article>
+          <article class="model-card">
+            <h3>Nonlinear State Enhancement</h3>
+            <p>Introduces nonlinear state evolution to increase the representation capability of Mamba.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel panel--wide">
+        <div class="panel__title-row">
+          <h2>Visual Comparison</h2>
+          <span>Results</span>
+        </div>
+        <div class="figure-card">
+          <img src="./figures/LQ-ours.png" alt="Visual comparison result" />
+          <div>
+            <h3>Visual Results</h3>
+            <p>HIFER-Mamba reconstructs clearer structures and finer textures than previous Mamba-based methods.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel--wide">
+        <div class="panel__title-row">
           <h2>论文图示说明</h2>
           <span>Figures</span>
         </div>
         <div class="figure-grid">
           <article class="figure-card">
-            <img src="../assets/architecture.svg" alt="模型结构图" />
+            <img src="./figures/overview.png" alt="模型结构图" />
             <div>
               <h3>模型结构图</h3>
               <p>展示了输入特征经过 Mamba 编码、特征融合与输出预测的整体流程。</p>
             </div>
           </article>
           <article class="figure-card">
-            <img src="../assets/pipeline.svg" alt="训练流程图" />
+            <img src="./figures/overview.png" alt="训练流程图" />
             <div>
               <h3>训练与推理流程</h3>
               <p>说明了数据准备、模型训练、推理和结果分析的完整链路。</p>
             </div>
           </article>
           <article class="figure-card">
-            <img src="../assets/results.svg" alt="实验结果图" />
+            <img src="./figures/overview.png" alt="实验结果图" />
             <div>
               <h3>实验结果展示</h3>
               <p>用于直观对比不同配置下的性能提升与稳定性。</p>
