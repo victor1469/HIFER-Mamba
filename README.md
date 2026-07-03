@@ -57,7 +57,7 @@ HIFER-Mamba integrates frequency-domain representation, progressive feature inte
 # Quantitative Results
 
 <p align="center">
-<img src="figures/result_table.png" width="95%">
+<img src="figures/psnr_compare.png" width="95%">
 </p>
 
 HIFER-Mamba consistently achieves competitive quantitative performance on five widely used benchmark datasets.
@@ -67,7 +67,7 @@ HIFER-Mamba consistently achieves competitive quantitative performance on five w
 # Visual Comparison
 
 <p align="center">
-<img src="figures/visual_results.png" width="96%">
+<img src="figures/Residual_Analysis.png" width="96%">
 </p>
 
 Our model reconstructs sharper edges, richer textures and more faithful structural details than previous Mamba-based methods.
