@@ -22,7 +22,7 @@ Image super-resolution requires both fine-grained texture restoration and robust
 
 ## Model architecture
 
-![模型结构图](assets/architecture.svg)
+![模型结构图](figures/overview.png)
 
 The overall architecture illustrates the interaction among feature extraction, frequency-aware enhancement, progressive integration, and final reconstruction.
 
