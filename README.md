@@ -2,96 +2,122 @@
 
 > **HIFER-Mamba: High-frequency Information Feature Enhancement and Reconstruction for Image Super-Resolution**
 
-[![Paper](https://img.shields.io/badge/Paper-TIP-red)]()
-[![Project Page](https://img.shields.io/badge/Project-Website-blue)]()
+<p align="center">
+
+[![Paper Status](https://img.shields.io/badge/Status-Under%20Review-orange)]()
+[![Target Journal](https://img.shields.io/badge/IEEE-TIP-red)]()
+[![Project Page](https://img.shields.io/badge/Website-Coming%20Soon-blue)]()
 [![License](https://img.shields.io/badge/License-MIT-green)]()
+
+</p>
 
 Official implementation of **HIFER-Mamba**, a frequency-aware Mamba framework for image super-resolution.
 
 ---
 
-## Overview
+# News
 
-HIFER-Mamba introduces three complementary components into the Mamba-based image restoration framework:
+- 🔥 **2026.07** Paper submitted to **IEEE Transactions on Image Processing (TIP)** and currently **under review**.
+- 🔥 Project page, pretrained models and training code will be released after paper acceptance.
+
+---
+
+# Overview
+
+HIFER-Mamba is built upon **MambaIR** and introduces three lightweight yet effective improvements for image super-resolution:
 
 - **Frequency-aware Feature Enhancement**
 - **Progressive Feature Integration**
 - **Nonlinear State Enhancement**
 
-These modules effectively improve high-frequency texture reconstruction and structural recovery while preserving the computational efficiency of state-space models.
+These complementary designs significantly improve high-frequency texture reconstruction, structural recovery and feature representation while preserving the efficiency of state-space models.
 
 ---
 
-## Motivation
+# Motivation
 
-Image super-resolution requires recovering fine textures while maintaining global structural consistency.
+Image super-resolution requires recovering fine textures while maintaining structural consistency.
 
-To address this challenge, HIFER-Mamba combines frequency-domain representation, progressive feature interaction, and nonlinear state modeling into a unified Mamba framework, enabling more accurate and visually pleasing image reconstruction.
+HIFER-Mamba integrates frequency-domain representation, progressive feature interaction and nonlinear state modeling into a unified Mamba framework, leading to more faithful image reconstruction.
 
 ---
 
-## Framework
+# Framework
 
 <p align="center">
-<img src="figures/overview.png" width="95%">
+<img src="figures/overview.png" width="96%">
 </p>
-
-**Figure 1.** Overall architecture of HIFER-Mamba.
-
----
-
-## Pipeline
 
 <p align="center">
-<img src="assets/pipeline.svg" width="90%">
+<b>Figure 1.</b> Overall architecture of HIFER-Mamba.
 </p>
-
-The proposed pipeline progressively extracts, enhances, and reconstructs image features through frequency-aware representation and nonlinear state-space modeling.
 
 ---
 
-## Visual Results
+# Quantitative Results
 
 <p align="center">
-<img src="assets/results.svg" width="95%">
+<img src="figures/result_table.png" width="95%">
 </p>
 
-HIFER-Mamba reconstructs sharper textures and clearer structures than previous Mamba-based image restoration methods.
+HIFER-Mamba consistently achieves competitive quantitative performance on five widely used benchmark datasets.
 
 ---
 
-## Key Features
+# Visual Comparison
 
-- ✅ Frequency-aware representation for enhanced texture reconstruction.
-- ✅ Progressive feature integration across deep Mamba blocks.
-- ✅ Nonlinear state enhancement for improved representation capability.
-- ✅ Competitive PSNR/SSIM on five standard benchmark datasets.
-- ✅ Stable optimization and efficient inference.
+<p align="center">
+<img src="figures/visual_results.png" width="96%">
+</p>
+
+Our model reconstructs sharper edges, richer textures and more faithful structural details than previous Mamba-based methods.
 
 ---
 
-## Repository Structure
+# Training Behaviour
 
+<p align="center">
+<img src="figures/training_curve.png" width="90%">
+</p>
+
+The training process exhibits smooth convergence and stable optimization throughout learning.
+
+---
+
+# Key Features
+
+- ✅ Frequency-aware enhancement for recovering high-frequency textures.
+- ✅ Progressive feature interaction across deep Mamba blocks.
+- ✅ Nonlinear state enhancement for stronger representation capability.
+- ✅ Superior quantitative performance on standard SR benchmarks.
+- ✅ Stable optimization with efficient inference.
+
+---
+
+# Repository Structure
+
+```text
+analysis/          Analysis scripts
+basicsr/           BasicSR framework
+datasets/          Training and testing datasets
+experiments/       Configurations and checkpoints
+figures/           Figures used in the paper
+results/           Reconstruction results
+options/           Training/testing options
+docs/              Project webpage
 ```
-analysis/        Analysis scripts
-datasets/        Training and testing datasets
-experiments/     Training configurations and checkpoints
-figures/         Figures used in the paper
-results/         Reconstruction results
-docs/            Project webpage
-```
 
 ---
 
-## Getting Started
+# Getting Started
 
-### Training
+## Training
 
 ```bash
 python basicsr/train.py -opt options/train/train_HIFER_Mamba_x2.yml
 ```
 
-### Testing
+## Testing
 
 ```bash
 python basicsr/test.py -opt options/test/test_HIFER_Mamba_x2.yml
@@ -99,27 +125,39 @@ python basicsr/test.py -opt options/test/test_HIFER_Mamba_x2.yml
 
 ---
 
-## Project Page
+# Experimental Highlights
 
-Coming soon.
+- Frequency-aware representation improves texture reconstruction.
+- Progressive feature integration enhances feature consistency.
+- Nonlinear state enhancement increases representation capability.
+- Better visual quality with competitive PSNR/SSIM.
+- Stable convergence during optimization.
 
 ---
 
-## Citation
+# Project Page
 
-If you find this work useful, please consider citing:
+🚧 Coming Soon.
+
+The project webpage, pretrained models, checkpoints and supplementary materials will be released after paper acceptance.
+
+---
+
+# Citation
+
+If you find this work useful, please consider citing
 
 ```bibtex
 @article{jiang2026hifermamba,
   title={HIFER-Mamba: High-frequency Information Feature Enhancement and Reconstruction for Image Super-Resolution},
-  author={Nan Jiang and ...},
-  journal={IEEE Transactions on Image Processing},
+  author={Nan Jiang and others},
+  journal={Under Review},
   year={2026}
 }
 ```
 
 ---
 
-## Acknowledgement
+# Acknowledgement
 
-This project is built upon the excellent open-source projects **BasicSR** and **MambaIR**. We sincerely thank the original authors for making their code publicly available.
+This project is built upon the excellent open-source projects **BasicSR** and **MambaIR**. We sincerely thank the original authors for making their valuable code publicly available.
