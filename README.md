@@ -44,7 +44,11 @@ HIFER-Mamba is built upon **MambaIR** and introduces three lightweight yet effec
 In addition, we highlight There specific innovations below:
 
 
+- ** Frequency-Enhanced State Space Layer (F)**: To enhance the global context modeling capability of Mamba, we introduce a frequency-enhanced state space layer, as illustrated in Fig. 2. Unlike conventional spatial-domain feature propagation, the proposed design explicitly models spectral information to better capture global structures and high-frequency details.
 
+  <p align="center">
+  <img src="figures/F.png" width="80%">
+  </p>
 
 - **Dynamic Prompt with Cross-Layer Consistency (P)**: To provide adaptive guidance for different layers, we introduce a dynamic prompt generation mechanism. Unlike conventional static prompts that remain fixed during inference, our prompts are dynamically generated according to the current input features, enabling more flexible and content-aware feature modulation across different image structures and degradation patterns.
 
