@@ -4,11 +4,8 @@
 *.ckpt
 *.state
 # tensorboard
-tb_logger/
 # experiments
 experiments/**/models/
 experiments/**/training_states/
-# results
-results/
 # logs
 *.log
