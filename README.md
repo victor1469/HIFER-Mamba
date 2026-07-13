@@ -30,6 +30,20 @@ HIFER-Mamba is built upon **MambaIR** and introduces three lightweight yet effec
 - **Progressive Feature Integration**
 - **Nonlinear State Enhancement**
 
+In addition, we highlight two specific innovations below:
+
+- **Dynamic Prompt with Cross-Layer Consistency (P)**: To provide adaptive guidance for different layers, we introduce a dynamic prompt generation mechanism. Unlike conventional static prompts that remain fixed during inference, our prompts are dynamically generated according to the current input features, enabling more flexible and content-aware feature modulation across different image structures and degradation patterns.
+
+  <p align="center">
+  <img src="figures/P.png" width="80%">
+  </p>
+
+- **Nonlinear State Expansion (U)**: Compared with conventional linear state transitions, the proposed nonlinear expansion mechanism enables more expressive feature interaction and improves the modeling of complex spatial structures. In particular, the gated nonlinear transformation enhances feature selectivity and stabilizes deep feature propagation, which is beneficial for recovering fine textures and structurally rich regions in image super-resolution tasks.
+
+  <p align="center">
+  <img src="figures/U.png" width="80%">
+  </p>
+
 These complementary designs significantly improve high-frequency texture reconstruction, structural recovery and feature representation while preserving the efficiency of state-space models.
 
 ---
