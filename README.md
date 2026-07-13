@@ -30,6 +30,17 @@ HIFER-Mamba is built upon **MambaIR** and introduces three lightweight yet effec
 - **Progressive Feature Integration**
 - **Nonlinear State Enhancement**
 
+
+
+# Framework
+
+<p align="center">
+<img src="figures/overview.png" width="96%">
+</p>
+
+
+
+
 In addition, we highlight two specific innovations below:
 
 - **Dynamic Prompt with Cross-Layer Consistency (P)**: To provide adaptive guidance for different layers, we introduce a dynamic prompt generation mechanism. Unlike conventional static prompts that remain fixed during inference, our prompts are dynamically generated according to the current input features, enabling more flexible and content-aware feature modulation across different image structures and degradation patterns.
@@ -56,15 +67,8 @@ HIFER-Mamba integrates frequency-domain representation, progressive feature inte
 
 ---
 
-# Framework
 
-<p align="center">
-<img src="figures/overview.png" width="96%">
-</p>
 
-<p align="center">
-<b>Figure 1.</b> Overall architecture of HIFER-Mamba.
-</p>
 
 ---
 
@@ -91,7 +95,7 @@ Our model reconstructs sharper edges, richer textures and more faithful structur
 # Training Behaviour
 
 <p align="center">
-<img src="figures/training_curve.png" width="90%">
+<img src="figures/loss_curve.png" width="90%">
 </p>
 
 The training process exhibits smooth convergence and stable optimization throughout learning.
